@@ -1,10 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
     margin: 0;
     padding: 0; 
     background: var(--white-color);
     font-family: var(--base-font-family);
 }
-
 
 .hero {
     background-image: url(coding.webp);
@@ -15,6 +19,7 @@ body {
     min-height: 100vh;
     position: relative;
  }
+
 .hero::before {
     content: "";
     position: absolute;
@@ -84,6 +89,45 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.testimonials, .services, .contact-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.facepic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px, solid, red;
+  background: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.testi-text {
+  width: 400px;
+}
+
+.industryleader, .nonCS, .CS, .admissions, .bootcamp, .career, .call, .email, .location {
+  display: inline;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px;
+  justify-content: center;
+}
+.service-id, .contact-id {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.contact-head, .footer-main {
+  text-align: center;
 }
 
 @media screen and (max-width: 992px) {
